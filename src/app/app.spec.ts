@@ -1,10 +1,10 @@
 import { TestBed } from '@angular/core/testing';
-import { App } from './app';
+import { App} from './app';  // ✅ সঠিকভাবে import
 
-describe('App', () => {
+describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App],
+      imports: [App],  // ✅ standalone component ব্যবহার
     }).compileComponents();
   });
 
